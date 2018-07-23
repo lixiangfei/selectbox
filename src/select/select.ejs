@@ -1,0 +1,11 @@
+<div class="select_box">
+    <div class="title js-title">
+        <%= curOption %><em class="arrow-icon icon"></em></div>
+    <ul>
+        <% for(var i=0; i < list.length; i++){ var item = list[i];%>
+            <li data-index="<%= i%>">
+                <%= item %> <em class="selected-icon icon"></em>
+            </li>
+            <% } %>
+    </ul>
+</div>
